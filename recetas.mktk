@@ -1,0 +1,6 @@
+### **Scripting para Mikrotik** 
+
+## Como eliminar una lista de direcciones en un comando
+[https://forum.mikrotik.com/viewtopic.php?t=93848]
+
+/ip firewall address-list remove [/ip firewall address-list find list="list-name"]
