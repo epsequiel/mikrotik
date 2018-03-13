@@ -17,7 +17,7 @@ La idea es aprovechar una feature del FW de MKTK que permite ante un match agreg
 a una lista determinada.
 En este caso vamos a ver si hay matches en un determinado tiempo mandamos la ip a una lista
 y de esa a otra y al final la blacklisteamos.
-[Idea original](https://wiki.mikrotik.com/wiki/Bruteforce_login_prevention)
+ - [Idea original](https://wiki.mikrotik.com/wiki/Bruteforce_login_prevention)
 
 ```python
     /ip firewall filter
