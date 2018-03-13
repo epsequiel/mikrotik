@@ -9,6 +9,7 @@ lenguaje scripting de RouterOS
   - [Documentacion oficial: manual](https://wiki.mikrotik.com/wiki/Manual:Scripting)
   - [Documentacion oficial: ejemplos](https://wiki.mikrotik.com/wiki/Manual:Scripting-examples)
   - [Foro de Mikrotik](https://forum.mikrotik.com/)
+  - [Pagina con muchos scripts utiles](https://www.mikrotik-routeros.com/category/scripts/a) - Pagina australiana con aportes de varias personas
 
 
 ## **Como configurar OpenVPN en MKTK**
