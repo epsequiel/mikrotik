@@ -38,3 +38,24 @@ y de esa a otra y al final la blacklisteamos.
         add chain=input protocol=tcp dst-port=22 connection-state=new action=add-src-to-address-list \
             address-list=ssh_stage1 address-list-timeout=1m comment="" disabled=no
 ```
+
+
+## Como logearse a la CLI por SSH con la key
+Tenemos que copiar nuestra key publica al router y ejecutar un comando para que la sume a la 
+keychain.
+[Ver en el link a la documentacion oficial](https://wiki.mikrotik.com/wiki/Use_SSH_to_execute_commands_(DSA_key_login))
+
+ 1- Copiamos la key con ftp
+
+> ftp routermktk
+    USER admin
+    PASS *****
+  > put id_rsa.pub
+
+ 2- Ahora en el router levantamos la key a la keychain
+    ```python
+    [admin@mikrotik]> user ssh-keys import file=id_dsa.pub 
+    user: admin-ssh
+    ```
+
+# 
