@@ -45,18 +45,18 @@ Tenemos que copiar nuestra key publica al router y ejecutar un comando para que 
 keychain.
 [Ver en el link a la documentacion oficial](https://wiki.mikrotik.com/wiki/Use_SSH_to_execute_commands_(DSA_key_login))
 
- 1- Copiamos la key con ftp:
- En la CLI de Linux
+ 1- Copiamos la key con ftp.
+ En la CLI de Linux:
 ```bash
   > ftp routermktk
      USER admin
      PASS *****
   > put id_rsa.pub
   ```
- 2- Ahora en el router levantamos la key a la keychain
-    ```python
-    [admin@mikrotik]> user ssh-keys import file=id_dsa.pub 
-    user: admin-ssh
-    ```
+ 2- Ahora en el router levantamos la key a la keychain:
+ ```python
+      [admin@mikrotik]> user ssh-keys import file=id_dsa.pub 
+      user: admin-ssh
+ ```
 
 # 
